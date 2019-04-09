@@ -18,14 +18,13 @@
   <body>
 
     <!--Header of the page-->
-    <header class="">
+    <header class="" id="header">
         <div class="row flex-nowrap justify-content-between align-items-center w-100">
             <div class="col-4">
             </div>
             <div class="col-4 text-center">
                 <h1 class="h1 my-0 py-0">
-                    <a class="header-logo text-dark" href="<?php echo $this->baseurl; ?>/">
-						<?php echo $logo; ?>
+                    <a class="header-logo text-dark" href="<?php echo $this->params->get('siteTitle'); ?>
                     </a>
                 </h1>
             </div>
@@ -83,14 +82,14 @@
             <!--Content-->
             <div class="col-md-6 d-sm-block main-content">
                     
-                    <div class="container-component">
-                        <jdoc:include type="modules" name="breadcrumbs" style="none" />
-                        <jdoc:include type="modules" name="main-top" style="cardGrey" />
-                        <jdoc:include type="message" />
-                        <jdoc:include type="component" />
-                        <jdoc:include type="modules" name="main-bottom" style="cardGrey" />
-                    </div>
-                        
+                <div class="container-component">
+                    <jdoc:include type="modules" name="breadcrumbs" style="none" />
+                    <jdoc:include type="modules" name="main-top" style="cardGrey" />
+                    <jdoc:include type="message" />
+                    <jdoc:include type="component" />
+                    <jdoc:include type="modules" name="main-bottom" style="cardGrey" />
+                </div>
+                    
             </div><!-- /.Content -->
 
 
@@ -100,6 +99,7 @@
                 <jdoc:include type="modules" name="sidebar-right" style="default" />
             </div>
             <?php endif; ?>
+
         </div><!-- /.row -->
     </main><!-- /.container -->
 
@@ -108,7 +108,7 @@
     <footer class="fixed-buttom footer">
         <p>Bussiness Template built for Joomla! 4 by <a href="mailto:ibrahim_fathy@outook.com"></a>@ibrahim_fathy</a>.</p>
         <p>
-            <a href="#">Back to top</a>
+            <a href="#header">Back to top</a>
         </p>
         <jdoc:include type="modules" name="footer" style="none" />
     </footer>
