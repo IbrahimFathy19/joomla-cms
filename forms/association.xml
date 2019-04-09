@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="">
+	<fieldset>
+		<field name="icecream" type="icecream" label="Ice Cream"/>
+	</fieldset>
+
+</form>
