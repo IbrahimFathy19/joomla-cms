@@ -21,7 +21,7 @@ class ItemIceCreamField extends \JFormFieldList
 
 	public function getOptions() {
 
-        $json = file_get_contents(JPATH::base() . '/*administrator/components/com_associations/Field/ice_cream_flavors.json*/');
+        $json = file_get_contents(JPATH::base());
         $json_data = json_decode($json);
         foreach ($json_data as $value) {
             $ice_cream_flavors[] = $value->flavor;
