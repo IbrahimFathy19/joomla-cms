@@ -1,0 +1,55 @@
+
+
+.header-logo { 
+
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  
+}
+.mod-menu {
+  flex-direction: column; 
+}
+.mod-menu a {
+  color: gray;
+  margin: .25rem;
+
+  /* extend nav-link*/
+}
+
+.jumbotron{
+  height: 70vh;
+}
+
+.red {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+.main-content {
+
+}
+
+.post-title {
+
+  font-size: 2.25rem; 
+}
+.blue {
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*
+ * Footer
+ */
+ .footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.footer p:last-child {
+  margin-bottom: 0;
+}
