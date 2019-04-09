@@ -1,2 +1,2 @@
-# exquint
-Template for Joomla! 4
+# Ice Cream field type xD
+Shows a dynamic list of flavors, read from json file
